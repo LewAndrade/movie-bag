@@ -7,6 +7,8 @@ name = "pypi"
 flask = "*"
 flask-mongoengine = "*"
 flask-restful = "*"
+flask-bcrypt = "*"
+flask-jwt-extended = "*"
 
 [dev-packages]
 autopep8 = "*"
