@@ -4,7 +4,8 @@ from flask_jwt_extended import jwt_required, get_jwt_identity
 from mongoengine.errors import FieldDoesNotExist, NotUniqueError, DoesNotExist, ValidationError, InvalidQueryError
 
 from database.models import Movie, User
-from database.errors import SchemaValidationError, MovieAlreadyExistsError, InternalServerError, UpdatingMovieError, DeletingMovieError, MovieDoesNotExistsError
+from resources.errors import SchemaValidationError, MovieAlreadyExistsError, InternalServerError, UpdatingMovieError, \
+    DeletingMovieError, MovieDoesNotExistsError
 
 
 class MoviesApi(Resource):

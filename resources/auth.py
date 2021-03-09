@@ -16,8 +16,8 @@ class SignupApi(Resource):
             user = User(**body)
             user.hash_password()
             user.save()
-            id = user.id
-            return {'id': str(id)}, 201
+            user_id = user.id
+            return {'id': str(user_id)}, 201
         except FieldDoesNotExist:
             raise SchemaValidationError
         except NotUniqueError:
